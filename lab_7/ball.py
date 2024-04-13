@@ -26,7 +26,7 @@ pygame.display.set_caption("Moving Ball")
 
 clock = pygame.time.Clock()
 
-
+# Main game loop
 running = True
 while running:
     for event in pygame.event.get():
@@ -46,7 +46,8 @@ while running:
                 if ball_x + speed <= screen_width - ball_radius:
                     ball_x += speed
 
-
+    # Fill the screen with white color
+    screen.fill(white)
 
     # Draw the ball
     pygame.draw.circle(screen, red, (ball_x, ball_y), ball_radius)
