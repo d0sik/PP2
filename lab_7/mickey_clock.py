@@ -22,8 +22,8 @@ while not done:
 
     current_time = dt.now().time()
 
-    seconds_angle = -(current_time.second * 6)
-    minutes_angle = -(current_time.minute * 6)
+    seconds_angle = current_time.second
+    minutes_angle = current_time.minute
 
     rotated_leftarm = pg.transform.rotate(leftarm_surf, seconds_angle)
     rotated_rightarm = pg.transform.rotate(rightarm_surf, minutes_angle)
